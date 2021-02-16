@@ -3,10 +3,12 @@ import About from "./pages/About";
 import Discover from "./pages/Discover";
 import Search from "./pages/Search";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Switch>
         <Route exact path="/about">
           <About />
